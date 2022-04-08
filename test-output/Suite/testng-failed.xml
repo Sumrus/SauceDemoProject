@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="performance_glitch_user" value="secret_sauce"/>
+    <parameter name="standard_user" value="secret_sauce"/>
+    <parameter name="locked_out_user" value="secret_sauce"/>
+    <parameter name="problem_user" value="secret_sauce"/>
+    <classes>
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="SuccessfulLogin"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
